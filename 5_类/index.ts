@@ -1,7 +1,7 @@
 /*
  * @Author: Mufeng
  * @Date: 2021-07-31 13:18:18
- * @FilePath: /typescript/5_Typescript类/index.ts
+ * @FilePath: /typescript/5_类/index.ts
  */
 // 类
 

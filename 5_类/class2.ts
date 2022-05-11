@@ -1,7 +1,7 @@
 /*
  * @Author: Mufeng
  * @Date: 2021-08-02 12:05:29
- * @FilePath: /typescript/5_Typescript类/class2.ts
+ * @FilePath: /typescript/5_类/class2.ts
  */
 // 修饰符
 

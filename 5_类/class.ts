@@ -1,7 +1,7 @@
 /*
  * @Author: Mufeng
  * @Date: 2021-08-01 12:16:21
- * @FilePath: /typescript/5_Typescript类/class.ts
+ * @FilePath: /typescript/5_类/class.ts
  */
 class Animal {
   eat() {
