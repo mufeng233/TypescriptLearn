@@ -17,9 +17,14 @@ class Man {
 
   // 受保护的
   protected sleep() {}
+
+  constructor(name: string) {
+    this.id = Math.floor(Math.random() * 100000);
+    this.name = name;
+  }
 }
 
-let man = new Man();
+// let man = new Man();
 
 // man.id = 1 // error 只读属性无法修改
 
@@ -63,7 +68,15 @@ console.log(p.firstName, p.lastName);
  * 静态属性
  */
 
-class Person3{
-    public static name1: string;
+class Person3 {
+  public static name1: string;
 }
 
+class Teacher extends Man {
+  constructor(name: string) {
+    super(name);
+  }
+}
+
+const teacher = new Teacher("XieZhiWen");
+console.log(teacher);

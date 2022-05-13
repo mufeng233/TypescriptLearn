@@ -5,7 +5,7 @@
  */
 // 类
 
-class Person {
+class Person implements IPerson {
   // 类属性
   name: string;
   age: number;
@@ -32,12 +32,12 @@ class Person {
 
 let me = new Person("Mufeng", 16);
 
-interface Person {
+interface IPerson {
   name: string;
   age: number;
 }
 
-function showPerson(person: Person) {
+function showPerson(person: IPerson) {
   return `Name:${person.name}, Age:${person.age}`;
 }
 // console.log(me.sayHello("LiNanJiang")); // Hello LiNanJinag

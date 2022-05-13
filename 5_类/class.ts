@@ -13,7 +13,7 @@ class Animal {
 }
 
 class Human extends Animal {
-  say(content: string) {
+  say(content: string): void {
     console.log(`I say ${content}`);
   }
 }
