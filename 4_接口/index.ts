@@ -6,12 +6,12 @@
 // 接口
 
 interface Person {
-    name:string,
-    age:number
+  name: string;
+  age: number;
 }
 
-function greeter(person:Person){
-    console.log(`Hello ${person.name}, Your age is ${person.age}`);
+function greeter(person: Person) {
+  console.log(`Hello ${person.name}, Your age is ${person.age}`);
 }
 
 /* greeter({
@@ -19,53 +19,54 @@ function greeter(person:Person){
     age:18
 }) */
 
-
 // 函数类型
-interface SearchFunc{
-    (keyword:string, limit?:number): any
+interface SearchFunc {
+  (keyword: string, limit?: number): any;
 }
 
-const searchContent:SearchFunc = function(keyword:string, limit?:number): any{
-    return keyword;
-}
+const searchContent: SearchFunc = function (
+  keyword: string,
+  limit?: number
+): any {
+  return keyword;
+};
 
 console.log(searchContent("misakaloli"));
 
-
 // 类类型
-interface Alarm{
-    alert():any
+interface Alarm {
+  alert(): any;
 }
 
-interface Light{
-    lightOn():void;
-    lightOff():void
+interface Light {
+  lightOn(): void;
+  lightOff(): void;
 }
 
-class Car implements Alarm{
-    alert(){
-        console.log('Car alert');
-    }
+class Car implements Alarm {
+  alert() {
+    console.log("Car alert");
+  }
 }
 
 // 一个类实现多个接口
 
-class Truck implements Light,Alarm{
-    alert(){
-        console.log('Truck alert');
-    }
+class Truck implements Light, Alarm {
+  alert() {
+    console.log("Truck alert");
+  }
 
-    lightOff(){
-        // something
-    }
+  lightOff() {
+    // something
+  }
 
-    lightOn(){
-        // something
-    }
+  lightOn() {
+    // something
+  }
 }
 
 // 接口继承接口
 
-interface LightableAlarm extends Light,Alarm {
-    // something
+interface LightableAlarm extends Light, Alarm {
+  // something
 }
