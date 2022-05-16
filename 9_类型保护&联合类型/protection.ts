@@ -21,3 +21,15 @@ function add(first: string | number, second: string | number) {
     return first + second;
   }
 }
+
+class NumberObj {
+  count: number = 0;
+}
+
+function addObj(first: object | NumberObj, second: object | NumberObj) {
+  if (first instanceof NumberObj && second instanceof NumberObj) {
+    return first.count + second.count;
+  } else {
+    return null;
+  }
+}
